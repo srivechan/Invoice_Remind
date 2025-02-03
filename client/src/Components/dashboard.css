@@ -1,0 +1,134 @@
+/* Dashboard Container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+/* Form Section */
+.form-container {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.invoice-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.invoice-form input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.submit-button {
+    background: #3182ce;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #2b6cb0;
+}
+
+/* Table Section */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1000px; /* Increased table minimum width */
+}
+
+th,
+td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #3182ce;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* No Invoices Message */
+.no-invoices {
+    text-align: center;
+    padding: 1rem;
+    font-style: italic;
+    color: #777;
+}
+
+/* Action Buttons */
+.action-button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: #fff;
+}
+
+.action-button.reminder {
+    background: #ffa502;
+}
+
+.action-button.delete {
+    background: #ff4757;
+}
+
+.action-button:hover {
+    opacity: 0.85;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .invoice-form {
+        flex-direction: column;
+    }
+
+    table {
+        min-width: 100%;
+    }
+
+    th,
+    td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .action-button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
